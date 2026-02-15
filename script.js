@@ -9,19 +9,19 @@ const designImages = {
     boho: {
         bedroom: ["images/bed.jpg.jpg", "images/mobed2.jpg"],
         living: ["images/bohoL1.jpg", "images/bohoL2.jpg", "images/living.jpg.jpg" ],
-        kitchen: ["images/kit.jpg.jpg", "images/kitchen.jpg.jpg"],
+        kitchen: ["images/k11.jpg", "images/k12.jpg"],
         workspace: ["images/ws.jpg.jpg", "images/work.jpg.jpg"]
     },
     modern: {
         bedroom: ["images/cobed1.jpg", "images/mobed3.jpg"],
         living: ["images/ModernL1.jpg", "images/ModernL2.jpg", "images/living.jpg.jpg"],
-        kitchen: ["images/kit.jpg.jpg", "images/kitchen.jpg.jpg"],
+        kitchen: ["images/k8.jpg", "images/k9.jpg"],
         workspace: ["images/ws.jpg.jpg", "images/work.jpg.jpg"]
     },
     cozy: {
         bedroom: ["images/cozyL1.jpg", "images/bed.jpg.jpg"],
         living: ["images/cozyL2.jpg", "images/cozyL3.jpg", "images/living.jpg.jpg"],
-        kitchen: ["images/kit.jpg.jpg", "images/kitchen.jpg.jpg"],
+        kitchen: ["images/k10.jpg", "images/k8.jpg"],
         workspace: ["images/ws.jpg.jpg", "images/work.jpg.jpg"]
     }
 };
@@ -104,4 +104,5 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
+
 });
