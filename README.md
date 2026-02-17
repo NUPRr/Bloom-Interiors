@@ -1,8 +1,8 @@
-# 🏛️ Bloom Interiors | Bespoke Digital Sanctuary
+# Bloom Interiors | Bespoke Digital Sanctuary
 
 An immersive, high-end interior design digital experience. This platform allows users to explore curated design languages and visualize their personal sanctuaries through an interactive mood-boarding journey.
 
-
+[View the live experience] https://nuprr.github.io/bloom-interiors/
 ---
 
 ## ✨ The Experience
