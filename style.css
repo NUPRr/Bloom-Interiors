@@ -366,100 +366,158 @@ body {
     color: #1a1a1a;
 }
 
-/* --- MOBILE & TABLET OPTIMIZATION --- */
+/* ===== MOBILE RESPONSIVE FIX ===== */
+
 @media (max-width: 768px) {
-    /* 1. Header & Logo chota karne ke liye */
-    .logo {
-        font-size: 28px !important;
-        letter-spacing: 5px !important;
+
+    /* Header */
+    .top-header{
+        padding:15px;
     }
 
-    .nav-links {
-        gap: 15px !important;
+    .logo{
+        font-size:24px;
+        letter-spacing:3px;
     }
 
-    .nav-links a {
-        font-size: 8px !important;
-        letter-spacing: 1px !important;
+    .nav-links{
+        gap:12px;
+        flex-wrap:wrap;
+        justify-content:center;
     }
 
-    /* 2. Hero Section (Index Page) ka text center aur chota */
-    .hero-content h2 {
-        font-size: 32px !important;
+    .nav-links a{
+        font-size:9px;
     }
 
-    /* 3. Sabse Important: Mood Board Grid Fix */
-    /* Phone par 1 ya 2 image hi dikhni chahiye side-by-side */
-    #designGrid {
-        grid-template-columns: 1fr !important; /* Ek ke niche ek */
-        padding: 20px !important;
+    /* Hero Section */
+    .hero{
+        height:70vh;
+        background-attachment:scroll; /* fixed background mobile pe problem karta hai */
+        background-position:center center;
     }
 
-    .luxury-card {
-        height: 300px !important; /* Phone screen ke liye height fix */
-        width: 100% !important;
+    .hero-content{
+        padding:0 20px;
     }
 
-    /* 4. Booking Form (Results Page) Fix */
-    .booking-section {
-        padding: 40px 5% !important;
+    .hero-content h2{
+        font-size:38px;
+        line-height:1.1;
     }
 
-    .consult-form {
-        flex-direction: column !important; /* Date aur Time ek ke niche ek */
-        width: 100%;
+    .hero-desc{
+        font-size:14px;
     }
 
-    .consult-form input, .consult-form button {
-        width: 100% !important;
+    /* Sections */
+    .section{
+        padding:60px 20px;
     }
 
-    /* 5. Philosophy Text */
-    .philosophy h3 {
-        font-size: 30px !important;
-    }
-    
-    .philosophy p {
-        font-size: 16px !important;
-        padding: 0 10px;
+    .philosophy h3{
+        font-size:30px;
     }
 
+    /* DESIGN GRID */
+    #designGrid,
+    .card-grid{
+        display:grid !important;
+        grid-template-columns:repeat(2,1fr) !important;
+        gap:15px !important;
+        padding:0 !important;
+    }
+
+    .card,
+    .luxury-card{
+        width:100% !important;
+        height:220px !important;
+        margin:0 !important;
+    }
+
+    .card img,
+    .luxury-card img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+
+    .card-text{
+        left:15px;
+        bottom:15px;
+    }
+
+    .card-text h4{
+        font-size:18px;
+    }
+
+    /* Explore Page */
+    .quiz-container{
+        flex-direction:column;
+        padding:60px 20px;
+        gap:30px;
+    }
+
+    .explore-info h2{
+        font-size:34px;
+    }
+
+    .quiz-card{
+        width:100%;
+        padding:25px;
+    }
+
+    /* Results Page */
+    .results-header{
+        padding-top:60px;
+    }
+
+    .results-header h3{
+        font-size:32px;
+    }
+
+    .booking-box h3{
+        font-size:28px;
+    }
+
+    .consult-form{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .consult-form input,
+    .consult-form button{
+        width:100%;
+    }
+
+    .contact-item p{
+        font-size:22px;
+    }
 }
-/* --- MOBILE REFINEMENT --- */
-@media (max-width: 600px) {
-    /* 1. Header ko stack karein taaki logo aur links mix na ho */
-    .top-header {
-        position: relative !important; /* Mobile par fixed header space gher leta hai */
-        padding: 15px !important;
-        text-align: center;
-    }
-    
-    .nav-links {
-        justify-content: center;
-        gap: 10px !important;
-        margin-top: 10px;
+
+/* Extra Small Phones */
+@media (max-width:480px){
+
+    .hero-content h2{
+        font-size:30px;
     }
 
-    /* 2. Grid Fix: Images ek ke niche ek aayengi */
-    #designGrid, .card-grid {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        gap: 20px !important;
+    #designGrid,
+    .card-grid{
+        grid-template-columns:repeat(2,1fr) !important;
+        gap:10px !important;
     }
 
-    .card, .luxury-card {
-        width: 100% !important; /* Full width on mobile */
-        max-width: 340px; 
-        height: 300px !important;
+    .card,
+    .luxury-card{
+        height:170px !important;
     }
 
-    /* 3. Text Sizing */
-    .hero-content h2 { font-size: 28px !important; }
-    .philosophy p { padding: 0 15px; font-size: 15px !important; }
-}
-img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover; /* Isse photo khichegi nahi, cut kar adjust ho jayegi */
+    .card-text h4{
+        font-size:15px;
+    }
+
+    .card-text span{
+        font-size:10px;
+    }
 }
